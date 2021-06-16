@@ -1,0 +1,25 @@
+<body>
+  <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
+  <script type="text/babel">
+    
+    let div = document.createElement('div');
+    let div2 = document.createElement('div');
+    let span = document.createElement('span');
+    let a = document.createElement('a');
+
+    span.innerText = 'Some Text';
+    span.style.color = 'red';
+    span.style.marginRight = '10px';
+
+    a.innerText = 'Some link';
+
+    div2.style.width = '100px'
+    div2.style.height = '100px'
+    div2.style.background = 'green'
+    div2.style.borderRadius = '10px'
+
+    div.append(div2, span, a);
+    document.body.append(div);
+    
+  </script>
+</body>
